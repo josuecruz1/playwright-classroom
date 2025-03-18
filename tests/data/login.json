@@ -1,5 +1,8 @@
 {
     "url": "https://www.saucedemo.com/v1/index.html",
     "username": "standard_user",
-    "password": "secret_sauce"
+    "password": "secret_sauce",
+    "product01": "Sauce Labs Backpack",
+    "product02": "Sauce Labs Bike Light",
+    "product02Desc": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
 }

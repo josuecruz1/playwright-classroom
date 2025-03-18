@@ -4,7 +4,8 @@ const data = JSON.parse(JSON.stringify(require("../data/login.json")));
 
 test('01 LogIn', async ({ page }) => {
     const Login = new logIn(page);
-    await Login.login(data.url, data.username, data.password);
+    await Login.login(data.url, data.username, data.password, data.product01);
     await expect(page.url()).toBe('https://www.saucedemo.com/v1/inventory.html');
     await expect(page).toHaveTitle('Swag Labs');
+    await Login.productList(data.product02, data.product02Desc);
 });

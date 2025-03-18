@@ -22,6 +22,5 @@ test('Example 01', async ({ page }) => {
   // validar que se visualice la URL correcta
   await expect(page.url()).toBe('https://www.saucedemo.com/v1/inventory.html');
   // validar el texto de un producto 
-  // const text = page.locator('.inventory_item_name');
   await expect(page.locator('xpath=//*[@id="item_4_title_link"]/div')).toHaveText('Sauce Labs Backpack');
   });
